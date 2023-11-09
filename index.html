@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <main>
+        <div id="calculator">
+            <p id="display">0</p>
+            <section id="buttons">
+                <button class="actions" id="clear" onclick="clearDisplay()">AC</button>
+                <button class="actions" id="pos-neg" onclick="toNegative()">+/-</button>
+                <button class="actions" id="percent" onclick="toPercent()">%</button>
+                <button class="signs" id="divide">÷</button>
+
+                <button class="numbers">7</button>
+                <button class="numbers">8</button>
+                <button class="numbers">9</button>
+                <button class="signs" id="multiply">×</button>
+
+                <button class="numbers">4</button>
+                <button class="numbers">5</button>
+                <button class="numbers">6</button>
+                <button class="signs" id="subtract">-</button>
+
+                <button class="numbers">1</button>
+                <button class="numbers">2</button>
+                <button class="numbers">3</button>
+                <button class="signs" id="add">+</button>
+
+                <button class="numbers" id="zero">0</button>
+                <button class="numbers">.</button>
+                <button id="equals" onclick="equate()">=</button>
+            </section>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
